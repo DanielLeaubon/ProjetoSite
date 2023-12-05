@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+    <link rel="stylesheet" href="css/agradecimento.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <img src="img/Imagem1.png" alt="">
+        <div>
+            Obrigado pela colaboração!
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <p>É importante disseminar a cultura sobre doação de órgãos e desconstruir a ideia sobre morte, afinal, da vida
+            nada
+            levamos, exceto o que somos! Discutir abertamente com a família e amigos é uma forma de discorrer sobre o
+            assunto.
+
+            <br><br>Manifestar o desejo em ser doador de órgãos é uma atitude nobre, é ver a vida dando continuidade na
+            existência
+            do outro, é possibilitar a esperança de viver.
+
+            <br><br>Nosso muito obrigado a todas as famílias doadoras e aos profissionais envolvidos nesse processo de
+            continuidade
+            de vida!
+        </p>
+
+        <!--<ul>
+            Colaboradores
+            <% for (let i=0; i < vetorNomes.length; i++) { %>
+                <li>
+                    <%=vetorNomes[i].nome%>
+                </li>
+                <% } %>
+        </ul>-->
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>CEP</th>
+                <th>Endereço</th>
+                <th>Sangue</th>
+            </tr>
+            <% for (let i=0; i < vetorNomes.length; i++) { %>
+                <tr>
+                    <td><%=vetorNomes[i].nome%></td>
+                    <td><%=vetorNomes[i].idade%></td>
+                    <td><%=vetorNomes[i].email%></td>
+                    <td><%=vetorNomes[i].telefone%></td>
+                    <td><%=vetorNomes[i].cep%></td>
+                    <td><%=vetorNomes[i].endereco%></td>
+                </tr>
+                <% } %>
+        </table>
+
+
+
+        <button id="voltar">
+            <a href="/">Voltar</a>
+        </button>
+    </main>
+
+    <footer id="rodape">
+
+    </footer>
+</body>
+
+</html>
